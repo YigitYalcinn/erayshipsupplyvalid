@@ -1,16 +1,49 @@
-# React + Vite
+# Eray Ship Supply
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Marketing website for Eray Ship Supply with multilingual content (TR/EN/RU), product categories, brand partners, contact info, and a Google Maps location section.
 
-Currently, two official plugins are available:
+## Tech Stack
+- React + Vite
+- i18next for translations
+- Framer Motion for animations
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Multilingual UI (TR/EN/RU)
+- Hero, About, Products, Brands, Contact sections
+- WhatsApp, Call, and Email actions
+- Google Maps embed
+- SEO meta tags per language
 
-## React Compiler
+## Getting Started
+```bash
+npm install
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Build
+```bash
+npm run build
+npm run preview
+```
 
-## Expanding the ESLint configuration
+## Project Structure
+```
+src/
+  components/
+  i18n/
+public/
+  brands/
+  images/
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Localization
+Translation files live in:
+- `src/i18n/translations/tr.json`
+- `src/i18n/translations/en.json`
+- `src/i18n/translations/ru.json`
+
+## Deployment (Vercel)
+Recommended settings:
+- Framework: Vite
+- Build Command: `npm run build`
+- Output Directory: `dist`
